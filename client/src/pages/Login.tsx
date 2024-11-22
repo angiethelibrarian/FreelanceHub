@@ -1,8 +1,9 @@
 import { useState, FormEvent, ChangeEvent } from "react";
 
-import Auth from '../utils/auth';
+import Auth from "../utils/auth";
 import { login } from "../api/authAPI";
-import {UserLogin} from "../interfaces/UserLogin"
+import type { UserLogin } from "../interfaces/UserLogin";
+
 
 const Login = () => {
   const [loginData, setLoginData] = useState<UserLogin>({
@@ -31,12 +32,13 @@ const Login = () => {
   };
 
   return (
-    <div className="form container">
+    <div className="form-container">
       <form className="form login-form" onSubmit={handleSubmit}>
         <h1>Login</h1>
         <div className="form-group">
           <label>Username</label>
           <input
+            placeholder="Username"
             className="form-input"
             type="text"
             name="username"
@@ -47,6 +49,8 @@ const Login = () => {
         <div className="form-group">
           <label>Password</label>
           <input
+            placeholder="Password"
+            className="form-input"
             type="password"
             name="password"
             value={loginData.password || ""}
@@ -54,7 +58,9 @@ const Login = () => {
           />
         </div>
         <div className="form-group">
-          <button type="submit">Submit Form</button>
+          <button className="btn btn-primary" type="submit">
+            Login
+          </button>
         </div>
       </form>
     </div>
