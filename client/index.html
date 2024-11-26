@@ -1,13 +1,51 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Krazy Kanban Board</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!-- Modal HTML -->
+<div id="projectModal" class="modal" tabindex="-1" style="display: none;">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">New Project</h5>
+              <button type="button" class="btn-close" onclick="closeModal()"></button>
+          </div>
+          <div class="modal-body">
+              <form id="projectForm">
+                  <div class="mb-3">
+                      <label for="project" class="form-label">Project</label>
+                      <select class="form-select" id="project" name="project">
+                          <option value="">Select a project</option>
+                          <option value="Website Redesign">Website Redesign</option>
+                          <option value="Mobile App">Mobile App</option>
+                          <option value="Marketing Campaign">Marketing Campaign</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="budget" class="form-label">Budget</label>
+                        <select class="form-select" id="budget" name="budget">
+                            <option value="">Select a budget</option>
+                            <option value="Under $10,000">Under $10,000</option>
+                            <option value="$10,000 - $50,000">$10,000 - $50,000</option>
+                            <option value="Over $50,000">Over $50,000</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="status" class="form-label">Status</label>
+                        <select class="form-select" id="status" name="status">
+                            <option value="">Select a status</option>
+                            <option value="Planned">Planned</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" onclick="saveProject()">Save</button>
+                <button class="btn btn-secondary" onclick="editProject()">Edit</button>
+                <button class="btn btn-danger" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <script>
+    
+  </script>
