@@ -96,7 +96,7 @@ export class ProjectAcceptance
   public acceptorId!: number; 
   public readonly acceptedAt!: Date;
   public accepted!: boolean;
-  public completionStatus!: 'Pending' | 'Completed' | 'Abandoned'; 
+  public projectStatus!: 'Pending' | 'Completed' | 'Suspended'; 
 }
 
 export function initModels(sequelize: Sequelize) {
@@ -219,8 +219,12 @@ export function initModels(sequelize: Sequelize) {
           key: 'id',
         },
       },
-      completionStatus: {
-        type: DataTypes.ENUM('Pending', 'Completed', 'Abandoned'),
+      accepted: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
+      },
+      projectStatus: {
+        type: DataTypes.ENUM('Pending', 'Completed', 'Suspended'),
         defaultValue: 'Pending',
       },
     },
