@@ -1,11 +1,24 @@
 import { DataTypes, Sequelize, Model, Optional } from 'sequelize';
 import bcrypt from 'bcrypt';
 
-interface UserAttributes {
+// interface UserAttributes {
+//   id: number;
+//   username: string;
+//   password: string;
+// }
+
+interface ProjectAttributes {
   id: number;
-  username: string;
-  password: string;
+  title: string;
+  description?: string;
+  budget: number;
+  projectId: number;
+  status: 'Open' | 'In Progress' | 'Closed';
+  createdDate?: Date;
+  updatedDate?: Date;
 }
+
+
 
 interface UserCreationAttributes extends Optional<UserAttributes, 'id'> {}
 
