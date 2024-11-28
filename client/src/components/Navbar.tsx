@@ -16,29 +16,37 @@ const Navbar = () => {
     checkLogin();
   }, [loginCheck])
 
+  const toggleMenu = () => {
+    console.log("TOGGLE MENU HERE");
+  }
+
   return (
-    <div className='nav'>
-      <div className='nav-title'>
-        <Link to='/'>Krazy Kanban Board</Link>
-      </div>
-      <ul>
-      {
+    <div className="nav-container">
+      <button className="hamburger" onClick={toggleMenu}>
+        Menu <span>&#9776;</span>
+      </button>
+      <nav id="navbar">
+        <Link to='/profile'>Profile</Link>
+        <Link to='/settings'>Settings</Link>
+        {
         !loginCheck ? (
-          <li className='nav-item'>
-            <button type='button'>
-              <Link to='/login'>Login</Link>
-            </button>
-          </li>
+          <Link to='/login'>Login</Link>
         ) : (
-          <li className='nav-item'>
-            <button type='button' onClick={() => {
-              auth.logout();
-            }}>Logout</button>
-          </li>
+          <button type='button' onClick={() => {
+            auth.logout();
+          }}>Logout</button>
         )
       }
-      </ul>
+      </nav>
     </div>
+    // <div className='nav'>
+    //   <div className='nav-title'>
+    //     <Link to='/'>Krazy Kanban Board</Link>
+    //   </div>
+    //   <ul>
+      
+    //   </ul>
+    // </div>
   )
 }
 

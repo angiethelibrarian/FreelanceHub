@@ -6,8 +6,8 @@ import ErrorPage from './ErrorPage';
 import Swimlane from '../components/Swimlane';
 import { TicketData } from '../interfaces/TicketData';
 import { ApiMessage } from '../interfaces/ApiMessage';
-
 import auth from '../utils/auth';
+import NewProjectModal from './NewProjectModal';
 
 const boardStates = ['Todo', 'In Progress', 'Done'];
 
@@ -67,9 +67,7 @@ const Board = () => {
         </div>  
       ) : (
           <div className='board'>
-            <button type='button' id='create-ticket-link'>
-              <Link to='/create' >New Ticket</Link>
-            </button>
+            <NewProjectModal />
             <div className='board-display'>
               {boardStates.map((status) => {
                 const filteredTickets = tickets.filter(ticket => ticket.status === status);
