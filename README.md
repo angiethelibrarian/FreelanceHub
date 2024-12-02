@@ -1,12 +1,12 @@
-# FreelanceHub
+# FullStack Forum
 
  ![MIT](https://img.shields.io/badge/License-MIT-blue)
 
 ## Overview
 
-An application that connects freelancers with clients for the purpose of collaboration.
+FullStack Forum is an application designed to connect freelancers with clients for collaborative project work. The platform allows users to log in, view projects, and manage their contributions effectively.
 
-As a freelance coder, I want a way to connect with other freelancers on their projects. I wanted it to be easily readable and accessible by logging in with a username and password. It should be usable by other freelancers just like me. It should be able to intake details of new projects.
+As a freelance coder, I wanted a way to connect with other freelancers and manage projects seamlessly. The application is user-friendly, secure, and enables users to input details about new projects.
 
 ## Link
 
@@ -25,13 +25,36 @@ As a freelance coder, I want a way to connect with other freelancers on their pr
   - [Credits](#credits)
   - [Tests](#tests)
 
+## FullStack Forum Features
+
+The FullStack Forum application covers the following requirements:
+
+#### User-Friendly Interface: 
+The application is designed for easy navigation with a responsive layout and clear call-to-action buttons.
+#### Profile Management: 
+Users can access their profiles and see offers for projects they have accepted.
+#### Project Management: 
+Users can view projects posted by others and add new projects through a modal interface.
+#### User Authentication: 
+Users can log in with a username and password, ensuring secure access to their accounts.
+#### Dark Mode Functionality: 
+The application is equipped with dark/light mode toggle functionality for improved readability.
+
+
 ## Usage
 
-Freelancers can use this page by entering a username and password. After logging in, they will be taken to the home page, where they can see projects posted by other users. By clicking on these projects, they can choose to accept the offer to become part of the project. Clicking on the hamburger in the top corner can take them to their profile page, where they can see offers of projects that they have already accepted. On this page, they can also create a new project, which will then be displayed on the home page.
+Freelancers can use this application by entering their username and password to log in. 
+
+After logging in, they are directed to the home page, where they can see projects posted by other users. 
+
+By clicking on these projects, they can choose to accept offers to collaborate.
+
+Clicking on the hamburger in the top corner can take them to their profile page, where they can see offers of projects that they have already accepted. 
+On this page, they can also create a new project, which will then be displayed on the home page.
 
 This site is also equipped with dark mode functionality. Each page has a dark/light mode toggle button within the hamburger in the upper right hand corner.
 
-## Coming Soon
+## Future Enhancements (Coming Soon)
 
 - Profile Page with a list of projects you have accepted
 - Project Details- upon clicking on a project, this will give you the option to view details and accept the project
