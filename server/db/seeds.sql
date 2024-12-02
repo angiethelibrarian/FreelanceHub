@@ -3,7 +3,6 @@ VALUES
     ('msmith', 'Mike', 'Smith', 'msmith@fullstackforum.com'),
     ('acooper', 'Alice', 'Cooper', 'acooper@fullstackforum.com');
 
-
 INSERT INTO projects (title, description, budget, poster_id, status)
 VALUES 
     ('Website Redesign', 'A complete overhaul of the current company website.', 15000.00, 1, 'Open'),
