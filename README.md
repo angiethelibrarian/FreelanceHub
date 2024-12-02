@@ -68,6 +68,24 @@ This site is also equipped with dark mode functionality. Each page has a dark/li
 
 Built with love by Angelica Mora, Arica Hyman, Gabriel Cisneros, Larry Martin, & Ariel Schilling
 
+## Tutorials
+
+- https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+- https://react.dev/learn/conditional-rendering
+- https://excalidraw.com/
+- https://www.w3schools.com/
+- https://www.devmaking.com/learn/design-patterns/object-pool-pattern/typescript/
+- https://react.dev/blog/2023/03/16/introducing-react-dev
+- https://sequelize.org/docs/v6/getting-started/
+- https://www.google.com/search?q=react+bootstrap+run+in+the+terminal&oq=react+bootstrap+run+in+the+terminal&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMg0IAxAAGIYDGIAEGIoFMg0IBBAAGIYDGIAEGIoFMg0IBRAAGIYDGIAEGIoFMgoIBhAAGIAEGKIEMgcIBxAAGO8FMgoICBAAGIAEGKIEMgoICRAAGIAEGKIE0gEINzEwMGowajmoAgCwAgE&sourceid=chrome&ie=UTF-8
+- https://sequelize.org/docs/v7/cli/
+- https://www.canva.com/
+- https://www.colorzilla.com/gradient-editor/
+- https://www.awesomescreenshot.com/
+- Google in general to get as much information as possible
+- ChatGPT, XPert Learning Assistant, Gemini, Claude.ai for various explanations and code examples. 
+- Special thanks to Jon Lynch, Katherine Hopkins, Quentin Pedrick, Ethan Cho helping define specs of our FullStack Forum application
+
  ## Tests
 
  No tests at this time.

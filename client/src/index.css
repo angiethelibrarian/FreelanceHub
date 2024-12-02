@@ -165,7 +165,7 @@ header {
 
   .btn {
       width: 100%; /* Full width for buttons on smaller screens */
-      bottom: 10px; /* Adjust for smaller screens */
+      bottom: 10px; 
   }
 }
 
