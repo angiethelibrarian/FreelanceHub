@@ -1,95 +1,57 @@
-// import { Outlet } from 'react-router-dom';
-
-// import Navbar from './components/Navbar';
-
-// function App() {
-
-//   return (
-//     <>
-//       <header>
-//         <h1>FullStack Forum</h1>
-//       </header>
-//       <Navbar />
-//       <Outlet />
-//       <footer className="footer">
-//           &copy; 2024 FullStack Forum. All rights reserved.
-//       </footer>
-//     </>
-//   )
-// }
-
-// export default App
-
-// import React, { useState } from 'react';
+// App.tsx
+import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
-// import Modal from './components/Modal';
-//import './.css'; // custom CSS for styling
+import Modal from './components/Modal';
+
+// Define an interface for the project
+interface Project {
+   name: string;
+   budget: number;
+   status: string;
+}
 
 function App() {
-    const [projects, setProjects] = useState([] as any[]);
-    const [isModalOpen, setModalOpen] = useState(false);
-  
-    //hooks
-     const addProject = (project: any) => {
-        setProjects([...projects, project]);
-        // setProjects(prevProjects => [...prevProjects].push(project));
-        setModalOpen(false);
-    
-  };
-  
-    return (
-        <>
-      <header>
-   < h1 > FullStack Forum</h1 >
-          </header >
-      
-   < Navbar />
-    
-   < div className = "project-list" >
-     < h2 > Projects</h2 >
-              {
-        projects.map((project, index) => (
-           < div key = { index } className = "project" >
-           < p > <strong>Project:</strong> { project.name }</p >
-           < p > <strong>Budget:</strong> ${ project.budget }</p >
-           < p > <strong>Status:</strong> { project.status }</p >
-                  </div >
-        ))
-  }
-   < button onClick = {() => setModalOpen(true)
-}> + New Project</button >
-        </div >
-  
-      {
-  isModalOpen && (
-     < Modal onClose = {() => setModalOpen(false)
-} onAddProject = { addProject } />
-        )}
+   const [projects, setProjects] = useState<Project[]>([]); // Use the Project interface
+   const [isModalOpen, setModalOpen] = useState(false);
 
- < footer className = "footer" >
-   & copy; 2024 FullStack Forum.All rights reserved.
-      </footer >
+   // Hook to add a new project
+   const addProject = (project: Project) => {
+      setProjects([...projects, project]);
+      setModalOpen(false);
+   };
+
+   return (
+      <>
+         <header>
+            <h1>FullStack Forum</h1>
+         </header>
+         <Navbar />
+         <div className="project-list">
+            <h3>Projects</h3>
+            {projects.map((project, index) => (
+               <div key={index} className="project">
+                  <p><strong>Project:</strong> {project.name}</p>
+                  <p><strong>Budget:</strong> ${project.budget}</p>
+                  <p><strong>Status:</strong> {project.status}</p>
+               </div>
+            ))}
+         </div>
+
+         {/* Fixed Button for New Project */}
+         <button className="btn btn-primary new-project-button" onClick={() => setModalOpen(true)}>
+            + New Project
+         </button>
+
+         {isModalOpen && (
+            <Modal onClose={() => setModalOpen(false)} onAddProject={addProject} />
+         )}
+
+         <footer className="footer">
+            &copy; 2024 FullStack Forum. All rights reserved.
+         </footer>
       </>
-      );
+   );
 }
 
 export default App;
-
-
-
-// import React from 'react';
-// import { Button } from 'react-bootstrap';
-
-// const App: React.FC = () => {
-//   return (
-//     <div className="App">
-//       <h1>Welcome to React-Bootstrap with TypeScript</h1>
-//       <Button variant="primary" onClick={() => alert('Button clicked!')}>
-//         Click Me
-//       </Button>
-//     </div>
-//   );
-// };
-
-// export default App;
