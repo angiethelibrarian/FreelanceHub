@@ -82,6 +82,7 @@ Built with love by Angelica Mora, Arica Hyman, Gabriel Cisneros, Larry Martin, &
 - https://www.canva.com/
 - https://www.colorzilla.com/gradient-editor/
 - https://www.awesomescreenshot.com/
+- https://webflow.com/blog/professional-fonts
 - Google in general to get as much information as possible
 - ChatGPT, XPert Learning Assistant, Gemini, Claude.ai for various explanations and code examples. 
 - Special thanks to Jon Lynch, Katherine Hopkins, Quentin Pedrick, Ethan Cho helping define specs of our FullStack Forum application

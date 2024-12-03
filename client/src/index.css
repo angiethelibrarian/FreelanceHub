@@ -1,6 +1,3 @@
-/* index.css */
-
-/* Body / General Styles */
 body {
   font-family: 'Didot', 'Linotype Didot', serif; /* Updated font */
   background-color: #f9f9f9; /* Light gray background */
@@ -9,15 +6,16 @@ body {
   padding: 0;
 }
 
-/* Header Styles */
+/* Header */
 header {
   background-color: #0072D5; /* Bright blue background */
   color: white; /* White text */
   padding: 20px;
 }
 
-/* Navbar Styles */
+/* Navbar */
 .nav-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,6 +33,35 @@ header {
 .nav-container a:hover {
   color: #cce5ff; /* Lighter blue on hover */
 }
+
+dropdown-menu {
+      position: absolute; /* Dropdown positioning */
+      background-color: white; /* Background color for dropdown */
+      border: 1px solid #ccc; /* Border for dropdown */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+      z-index: 1000; /* Ensure the dropdown is on top */
+      padding: 10px; /* Padding inside dropdown */
+      border-radius: 5px; /* Smooth corners */
+  }
+  
+  .dropdown-menu a,
+  .dropdown-menu button {
+      display: block; /* Stack items vertically */
+      padding: 8px; /* Padding for links/buttons */
+      text-decoration: none; /* Remove underline from links */
+      color: black; /* Text color */
+  }
+  
+  .dropdown-menu button {
+      background: none; /* Transparent background for buttons */
+      border: none; /* Remove border */
+      cursor: pointer; /* Pointer cursor for buttons */
+  }
+  
+  .dropdown-menu a:hover,
+  .dropdown-menu button:hover {
+      background-color: #f0f0f0; /* Change background on hover */
+  }
 
 /* Project List Styles */
 .project-list {
