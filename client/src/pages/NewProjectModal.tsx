@@ -97,7 +97,7 @@ const NewProjectModal: React.FC = () => {
                     </select>
                   </div>
                 </form>
-              </div>
+              {/* </div> */}
               <div className="modal-footer">
                 <button className="btn btn-success" onClick={handleSave}>
                   Save
@@ -111,6 +111,7 @@ const NewProjectModal: React.FC = () => {
                 >
                   Close
                 </button>
+              </div>
               </div>
             </div>
           </div>
